@@ -1,0 +1,14 @@
+image:
+  pullPolicy: IfNotPresent
+ingress: 
+  annotations: 
+    something: somewhere
+    kubernetes.io/ingress.class: some-class
+    kubernetes.io/backend-protocol: HTTPS
+  enabled: true
+  hosts: 
+  - dashboard.example.com
+  path: /
+  tls: 
+  - hosts: 
+    - dashboard.example.com
